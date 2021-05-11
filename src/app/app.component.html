@@ -4,9 +4,9 @@
     <div class="col-xs-12">
       <h2>Mes appareils domestiques</h2>
       <ul class="list-group">
-        <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
+        <app-appareil [appareilName]="aOne" [appareilStatus]="'éteint'"></app-appareil>
+        <app-appareil [appareilName]="aTwo" [appareilStatus]="'allumé'"></app-appareil>
+        <app-appareil [appareilName]="aThree" [appareilStatus]="'éteint'"></app-appareil>
       </ul>
       <button class="btn btn-success"
               [disabled]="!isAuth"

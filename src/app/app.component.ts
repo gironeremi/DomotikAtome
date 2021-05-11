@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
+  aOne="Machine à laver";
+  aTwo="PS5";
+  aThree="Enceinte connectée";
 
   constructor() {
     setTimeout(
