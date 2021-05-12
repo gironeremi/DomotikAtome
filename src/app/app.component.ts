@@ -7,9 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
-  aOne="Machine à laver";
-  aTwo="PS5";
-  aThree="Enceinte connectée";
+  appareils=[
+    {
+      name:'Machine à laver',
+      status:'éteint'
+    },
+    {
+      name:'PS5',
+      status:'allumé'
+    },
+    {
+      name:'Enceinte connectée',
+      status:'éteint'
+    }
+  ];
 
   constructor() {
     setTimeout(
