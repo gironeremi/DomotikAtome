@@ -7,9 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
+  lastUpdate = new Date();
   appareils=[
     {
-      name:'Machine à laver',
+      name:'Master System',
       status:'éteint'
     },
     {
@@ -17,7 +18,7 @@ export class AppComponent {
       status:'allumé'
     },
     {
-      name:'Enceinte connectée',
+      name:'Super Nintendo',
       status:'éteint'
     }
   ];
