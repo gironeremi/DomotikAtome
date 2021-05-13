@@ -1,6 +1,16 @@
-<div class="card m-2">
-  <h5 class="card-title">{{ title | uppercase }}</h5>
-  <p>le {{created_at | date | date: 'dd/MM/YYYY'}}</p>
-  <p class="card-text">{{ content }}</p>
-  <p>{{ loveIts }} loves</p>
+<div [ngClass]="{
+                'card m-2': true,
+                'card m-2 bg-success': loveIts > 0,
+                'card m-2 bg-danger': loveIts < 0 }">
+  <div class="card-body">
+    <h5 class="card-title">{{ title | uppercase }}</h5>
+    <p class="font-italic">le {{created_at | date | date: 'dd/MM/YYYY'}}</p>
+    <p class="card-text">{{ content }}</p>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-success shadow"
+            (click)="addLove()"><i class="fas fa-thumbs-up"></i></button>
+    <button class="btn btn-danger shadow"
+            (click)="removeLove()"><i class="fas fa-thumbs-down"></i></button>
+  </div>
 </div>

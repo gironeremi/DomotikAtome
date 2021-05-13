@@ -20,5 +20,15 @@ export class PostListItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  addLove(){
+    this.loveIts++;
+    this.showLove();
+  }
+  removeLove(){
+    this.loveIts--;
+    this.showLove();
+  }
+  showLove() {
+    console.log(this.loveIts);
+  }
 }
