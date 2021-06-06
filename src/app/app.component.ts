@@ -7,6 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
+  lastUpdate = new Date();
+  appareils=[
+    {
+      name:'Master System',
+      status:'éteint'
+    },
+    {
+      name:'PS5',
+      status:'allumé'
+    },
+    {
+      name:'Super Nintendo',
+      status:'éteint'
+    }
+  ];
 
   constructor() {
     setTimeout(

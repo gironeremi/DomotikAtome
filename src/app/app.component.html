@@ -1,16 +1,27 @@
-<h1 class="text-center jumbotron">Domotique Atome (at home)</h1>
+<h1 class="text-center jumbotron">Domotique Atome (at home)<br />
+  <small>ドモチク　アトム</small></h1>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h2>Mes appareils domestiques</h2>
+      <h2>Mes consoles</h2>
+      <p class="badge text-light bg-info">Mise à jour : {{ lastUpdate | date | date: 'dd/MM/YYYY'}}</p>
       <ul class="list-group">
-        <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
-        <app-appareil></app-appareil>
+        <app-appareil *ngFor="let appareil of appareils"
+                      [appareilName]="appareil.name"
+                      [appareilStatus]="appareil.status">
+        </app-appareil>
       </ul>
       <button class="btn btn-success"
               [disabled]="!isAuth"
               (click)="onAllumer()">Tout allumer!</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Dernières fiches de jeu</h2>
+      <app-post-list></app-post-list>
     </div>
   </div>
 </div>
