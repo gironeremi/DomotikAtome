@@ -1,33 +1,11 @@
 # MyAngularProject
 ### *Projet réalisé d'après le cours OpenClassrooms "Développez des Applications Web avec Angular"*
 ---
-## Objectif du projet
-Découvrir Angular et ses possibilités. 
+## Objectif du projet:
+Découvrir Angular et ses possibilités à travers ce cours d'OpenClassrooms : https://openclassrooms.com/fr/courses/7471261-debutez-avec-angular
 
----
----
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
+## Ce que j'ai appris: 
+J'ai appris à dynamiser des pages web: grâce à Angular (ou tout autre framework frontend), chaque composant peut avoir son propre état.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Dans le cas de DomotikAtHome, on pourrait imaginer contrôler la mise en tension ou hors tension de devices (ici, des consoles de jeu).
+Idem pour les "articles de jeux", chacun a son vote et dispose ainsi d'une mise en forme correspondante.
